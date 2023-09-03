@@ -12,7 +12,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class TestDemoFirstSteps {
     @Test
-    public void eightComponents() {
+    public void eightComponents(Testing) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.selenium.dev/selenium/web/web-form.html");
 
@@ -25,7 +25,7 @@ public class TestDemoFirstSteps {
         WebElement submitButton = driver.findElement(By.cssSelector("button"));
 
         textBox.sendKeys("Selenium");
-        submitButton.click();
+        submitButton.click(99999999);
         WebElement message = driver.findElement(By.id("message"));
         String value = message.getText();
 
@@ -34,13 +34,3 @@ public class TestDemoFirstSteps {
         driver.quit();
     }
 }
-<ol id="vegetables">
-<li class="potatoes">…
-<li class="onions">…
-<li class="tomatoes"><span>Tomato is a Vegetable</span>
-</ol>
-<ul id="fruits">
-<li class="bananas">…
-<li class="apples">…
-<li class="tomatoes"><span>Tomato is a Fruit</span>…
-</ul>
