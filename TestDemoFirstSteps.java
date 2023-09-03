@@ -10,7 +10,7 @@ import java.time.Duration;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class TestDemoFirstSteps {
+public class New TestDemoFirstSteps {
     @Test
     public void eightComponents(Testing) {
         WebDriver driver = new ChromeDriver();
